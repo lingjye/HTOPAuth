@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E9BB0AA1FFF19CB00203463 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0A91FFF19CB00203463 /* AppDelegate.m */; };
+		2E9BB0AD1FFF19CB00203463 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0AC1FFF19CB00203463 /* ViewController.m */; };
+		2E9BB0B01FFF19CC00203463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB0AE1FFF19CB00203463 /* Main.storyboard */; };
+		2E9BB0B21FFF19CC00203463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB0B11FFF19CC00203463 /* Assets.xcassets */; };
+		2E9BB0B51FFF19CC00203463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB0B31FFF19CC00203463 /* LaunchScreen.storyboard */; };
+		2E9BB0B81FFF19CC00203463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0B71FFF19CC00203463 /* main.m */; };
+		2E9BB0C21FFF19CC00203463 /* HTOPAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0C11FFF19CC00203463 /* HTOPAuthTests.m */; };
+		2E9BB0CD1FFF19CC00203463 /* HTOPAuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0CC1FFF19CC00203463 /* HTOPAuthUITests.m */; };
+		2E9BB0F41FFF1A2600203463 /* DynamicToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0DC1FFF1A2600203463 /* DynamicToken.m */; };
+		2E9BB0F51FFF1A2600203463 /* GTMMethodCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0E01FFF1A2600203463 /* GTMMethodCheck.m */; };
+		2E9BB0F61FFF1A2600203463 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0E31FFF1A2600203463 /* GTMNSDictionary+URLArguments.m */; };
+		2E9BB0F71FFF1A2600203463 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0E51FFF1A2600203463 /* GTMNSString+URLArguments.m */; };
+		2E9BB0F81FFF1A2600203463 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0E71FFF1A2600203463 /* GTMStringEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E9BB0F91FFF1A2600203463 /* HOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0EB1FFF1A2600203463 /* HOTPGenerator.m */; };
+		2E9BB0FA1FFF1A2600203463 /* OTPAuthBarClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0ED1FFF1A2600203463 /* OTPAuthBarClock.m */; };
+		2E9BB0FB1FFF1A2600203463 /* OTPAuthURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0EF1FFF1A2600203463 /* OTPAuthURL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E9BB0FC1FFF1A2600203463 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0F11FFF1A2600203463 /* OTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E9BB0FD1FFF1A2600203463 /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB0F31FFF1A2600203463 /* TOTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E9BB11E1FFF1A9200203463 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB1021FFF1A9200203463 /* LICENSE */; };
+		2E9BB11F1FFF1A9200203463 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1051FFF1A9200203463 /* MASCompositeConstraint.m */; };
+		2E9BB1201FFF1A9200203463 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1081FFF1A9200203463 /* MASConstraint.m */; };
+		2E9BB1211FFF1A9200203463 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB10A1FFF1A9200203463 /* MASConstraintMaker.m */; };
+		2E9BB1221FFF1A9200203463 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB10C1FFF1A9200203463 /* MASLayoutConstraint.m */; };
+		2E9BB1231FFF1A9200203463 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1101FFF1A9200203463 /* MASViewAttribute.m */; };
+		2E9BB1241FFF1A9200203463 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1121FFF1A9200203463 /* MASViewConstraint.m */; };
+		2E9BB1251FFF1A9200203463 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1141FFF1A9200203463 /* NSArray+MASAdditions.m */; };
+		2E9BB1261FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1171FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		2E9BB1271FFF1A9200203463 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB1191FFF1A9200203463 /* View+MASAdditions.m */; };
+		2E9BB1281FFF1A9200203463 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB11C1FFF1A9200203463 /* ViewController+MASAdditions.m */; };
+		2E9BB1291FFF1A9200203463 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB11D1FFF1A9200203463 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E9BB0BE1FFF19CC00203463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E9BB09D1FFF19CB00203463 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E9BB0A41FFF19CB00203463;
+			remoteInfo = HTOPAuth;
+		};
+		2E9BB0C91FFF19CC00203463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E9BB09D1FFF19CB00203463 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E9BB0A41FFF19CB00203463;
+			remoteInfo = HTOPAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E9BB0A51FFF19CB00203463 /* HTOPAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTOPAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9BB0A81FFF19CB00203463 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E9BB0A91FFF19CB00203463 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E9BB0AB1FFF19CB00203463 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E9BB0AC1FFF19CB00203463 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E9BB0AF1FFF19CC00203463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E9BB0B11FFF19CC00203463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E9BB0B41FFF19CC00203463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E9BB0B61FFF19CC00203463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9BB0B71FFF19CC00203463 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E9BB0BD1FFF19CC00203463 /* HTOPAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTOPAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9BB0C11FFF19CC00203463 /* HTOPAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTOPAuthTests.m; sourceTree = "<group>"; };
+		2E9BB0C31FFF19CC00203463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9BB0C81FFF19CC00203463 /* HTOPAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTOPAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9BB0CC1FFF19CC00203463 /* HTOPAuthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTOPAuthUITests.m; sourceTree = "<group>"; };
+		2E9BB0CE1FFF19CD00203463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9BB0DB1FFF1A2600203463 /* DynamicToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicToken.h; sourceTree = "<group>"; };
+		2E9BB0DC1FFF1A2600203463 /* DynamicToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicToken.m; sourceTree = "<group>"; };
+		2E9BB0DF1FFF1A2600203463 /* GTMMethodCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMethodCheck.h; sourceTree = "<group>"; };
+		2E9BB0E01FFF1A2600203463 /* GTMMethodCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMethodCheck.m; sourceTree = "<group>"; };
+		2E9BB0E21FFF1A2600203463 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		2E9BB0E31FFF1A2600203463 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		2E9BB0E41FFF1A2600203463 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		2E9BB0E51FFF1A2600203463 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		2E9BB0E61FFF1A2600203463 /* GTMStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStringEncoding.h; sourceTree = "<group>"; };
+		2E9BB0E71FFF1A2600203463 /* GTMStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStringEncoding.m; sourceTree = "<group>"; };
+		2E9BB0E81FFF1A2600203463 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		2E9BB0EA1FFF1A2600203463 /* HOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOTPGenerator.h; sourceTree = "<group>"; };
+		2E9BB0EB1FFF1A2600203463 /* HOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPGenerator.m; sourceTree = "<group>"; };
+		2E9BB0EC1FFF1A2600203463 /* OTPAuthBarClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPAuthBarClock.h; sourceTree = "<group>"; };
+		2E9BB0ED1FFF1A2600203463 /* OTPAuthBarClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPAuthBarClock.m; sourceTree = "<group>"; };
+		2E9BB0EE1FFF1A2600203463 /* OTPAuthURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPAuthURL.h; sourceTree = "<group>"; };
+		2E9BB0EF1FFF1A2600203463 /* OTPAuthURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPAuthURL.m; sourceTree = "<group>"; };
+		2E9BB0F01FFF1A2600203463 /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
+		2E9BB0F11FFF1A2600203463 /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
+		2E9BB0F21FFF1A2600203463 /* TOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGenerator.h; sourceTree = "<group>"; };
+		2E9BB0F31FFF1A2600203463 /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
+		2E9BB1021FFF1A9200203463 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2E9BB1041FFF1A9200203463 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		2E9BB1051FFF1A9200203463 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		2E9BB1061FFF1A9200203463 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		2E9BB1071FFF1A9200203463 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		2E9BB1081FFF1A9200203463 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		2E9BB1091FFF1A9200203463 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		2E9BB10A1FFF1A9200203463 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		2E9BB10B1FFF1A9200203463 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		2E9BB10C1FFF1A9200203463 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		2E9BB10D1FFF1A9200203463 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		2E9BB10E1FFF1A9200203463 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		2E9BB10F1FFF1A9200203463 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		2E9BB1101FFF1A9200203463 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		2E9BB1111FFF1A9200203463 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		2E9BB1121FFF1A9200203463 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		2E9BB1131FFF1A9200203463 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		2E9BB1141FFF1A9200203463 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2E9BB1151FFF1A9200203463 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2E9BB1161FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		2E9BB1171FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		2E9BB1181FFF1A9200203463 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		2E9BB1191FFF1A9200203463 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		2E9BB11A1FFF1A9200203463 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2E9BB11B1FFF1A9200203463 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		2E9BB11C1FFF1A9200203463 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		2E9BB11D1FFF1A9200203463 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2E9BB12A1FFF1C1100203463 /* TXMacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMacroHeader.h; sourceTree = "<group>"; };
+		2E9BB12B1FFF1C3300203463 /* HTOPHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTOPHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E9BB0A21FFF19CB00203463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0BA1FFF19CC00203463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0C51FFF19CC00203463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9BB09C1FFF19CB00203463 = {
+			isa = PBXGroup;
+			children = (
+				2E9BB1011FFF1A9200203463 /* Masonry */,
+				2E9BB0DA1FFF1A2600203463 /* DynamicToken */,
+				2E9BB0A71FFF19CB00203463 /* HTOPAuth */,
+				2E9BB0C01FFF19CC00203463 /* HTOPAuthTests */,
+				2E9BB0CB1FFF19CC00203463 /* HTOPAuthUITests */,
+				2E9BB0A61FFF19CB00203463 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E9BB0A61FFF19CB00203463 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0A51FFF19CB00203463 /* HTOPAuth.app */,
+				2E9BB0BD1FFF19CC00203463 /* HTOPAuthTests.xctest */,
+				2E9BB0C81FFF19CC00203463 /* HTOPAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E9BB0A71FFF19CB00203463 /* HTOPAuth */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0A81FFF19CB00203463 /* AppDelegate.h */,
+				2E9BB0A91FFF19CB00203463 /* AppDelegate.m */,
+				2E9BB0AB1FFF19CB00203463 /* ViewController.h */,
+				2E9BB0AC1FFF19CB00203463 /* ViewController.m */,
+				2E9BB0AE1FFF19CB00203463 /* Main.storyboard */,
+				2E9BB0B11FFF19CC00203463 /* Assets.xcassets */,
+				2E9BB0B31FFF19CC00203463 /* LaunchScreen.storyboard */,
+				2E9BB0B61FFF19CC00203463 /* Info.plist */,
+				2E9BB12A1FFF1C1100203463 /* TXMacroHeader.h */,
+				2E9BB12B1FFF1C3300203463 /* HTOPHeader.pch */,
+				2E9BB0B71FFF19CC00203463 /* main.m */,
+			);
+			path = HTOPAuth;
+			sourceTree = "<group>";
+		};
+		2E9BB0C01FFF19CC00203463 /* HTOPAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0C11FFF19CC00203463 /* HTOPAuthTests.m */,
+				2E9BB0C31FFF19CC00203463 /* Info.plist */,
+			);
+			path = HTOPAuthTests;
+			sourceTree = "<group>";
+		};
+		2E9BB0CB1FFF19CC00203463 /* HTOPAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0CC1FFF19CC00203463 /* HTOPAuthUITests.m */,
+				2E9BB0CE1FFF19CD00203463 /* Info.plist */,
+			);
+			path = HTOPAuthUITests;
+			sourceTree = "<group>";
+		};
+		2E9BB0DA1FFF1A2600203463 /* DynamicToken */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0DB1FFF1A2600203463 /* DynamicToken.h */,
+				2E9BB0DC1FFF1A2600203463 /* DynamicToken.m */,
+				2E9BB0DD1FFF1A2600203463 /* HTOPAuth */,
+			);
+			path = DynamicToken;
+			sourceTree = "<group>";
+		};
+		2E9BB0DD1FFF1A2600203463 /* HTOPAuth */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0DE1FFF1A2600203463 /* DebugUtils */,
+				2E9BB0E11FFF1A2600203463 /* Foundation */,
+				2E9BB0E81FFF1A2600203463 /* GTMDefines.h */,
+				2E9BB0E91FFF1A2600203463 /* HTOPAuth */,
+			);
+			path = HTOPAuth;
+			sourceTree = "<group>";
+		};
+		2E9BB0DE1FFF1A2600203463 /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0DF1FFF1A2600203463 /* GTMMethodCheck.h */,
+				2E9BB0E01FFF1A2600203463 /* GTMMethodCheck.m */,
+			);
+			path = DebugUtils;
+			sourceTree = "<group>";
+		};
+		2E9BB0E11FFF1A2600203463 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0E21FFF1A2600203463 /* GTMNSDictionary+URLArguments.h */,
+				2E9BB0E31FFF1A2600203463 /* GTMNSDictionary+URLArguments.m */,
+				2E9BB0E41FFF1A2600203463 /* GTMNSString+URLArguments.h */,
+				2E9BB0E51FFF1A2600203463 /* GTMNSString+URLArguments.m */,
+				2E9BB0E61FFF1A2600203463 /* GTMStringEncoding.h */,
+				2E9BB0E71FFF1A2600203463 /* GTMStringEncoding.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2E9BB0E91FFF1A2600203463 /* HTOPAuth */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB0EA1FFF1A2600203463 /* HOTPGenerator.h */,
+				2E9BB0EB1FFF1A2600203463 /* HOTPGenerator.m */,
+				2E9BB0EC1FFF1A2600203463 /* OTPAuthBarClock.h */,
+				2E9BB0ED1FFF1A2600203463 /* OTPAuthBarClock.m */,
+				2E9BB0EE1FFF1A2600203463 /* OTPAuthURL.h */,
+				2E9BB0EF1FFF1A2600203463 /* OTPAuthURL.m */,
+				2E9BB0F01FFF1A2600203463 /* OTPGenerator.h */,
+				2E9BB0F11FFF1A2600203463 /* OTPGenerator.m */,
+				2E9BB0F21FFF1A2600203463 /* TOTPGenerator.h */,
+				2E9BB0F31FFF1A2600203463 /* TOTPGenerator.m */,
+			);
+			path = HTOPAuth;
+			sourceTree = "<group>";
+		};
+		2E9BB1011FFF1A9200203463 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB1021FFF1A9200203463 /* LICENSE */,
+				2E9BB1031FFF1A9200203463 /* Masonry */,
+				2E9BB11D1FFF1A9200203463 /* README.md */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		2E9BB1031FFF1A9200203463 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB1041FFF1A9200203463 /* MASCompositeConstraint.h */,
+				2E9BB1051FFF1A9200203463 /* MASCompositeConstraint.m */,
+				2E9BB1061FFF1A9200203463 /* MASConstraint+Private.h */,
+				2E9BB1071FFF1A9200203463 /* MASConstraint.h */,
+				2E9BB1081FFF1A9200203463 /* MASConstraint.m */,
+				2E9BB1091FFF1A9200203463 /* MASConstraintMaker.h */,
+				2E9BB10A1FFF1A9200203463 /* MASConstraintMaker.m */,
+				2E9BB10B1FFF1A9200203463 /* MASLayoutConstraint.h */,
+				2E9BB10C1FFF1A9200203463 /* MASLayoutConstraint.m */,
+				2E9BB10D1FFF1A9200203463 /* Masonry.h */,
+				2E9BB10E1FFF1A9200203463 /* MASUtilities.h */,
+				2E9BB10F1FFF1A9200203463 /* MASViewAttribute.h */,
+				2E9BB1101FFF1A9200203463 /* MASViewAttribute.m */,
+				2E9BB1111FFF1A9200203463 /* MASViewConstraint.h */,
+				2E9BB1121FFF1A9200203463 /* MASViewConstraint.m */,
+				2E9BB1131FFF1A9200203463 /* NSArray+MASAdditions.h */,
+				2E9BB1141FFF1A9200203463 /* NSArray+MASAdditions.m */,
+				2E9BB1151FFF1A9200203463 /* NSArray+MASShorthandAdditions.h */,
+				2E9BB1161FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				2E9BB1171FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				2E9BB1181FFF1A9200203463 /* View+MASAdditions.h */,
+				2E9BB1191FFF1A9200203463 /* View+MASAdditions.m */,
+				2E9BB11A1FFF1A9200203463 /* View+MASShorthandAdditions.h */,
+				2E9BB11B1FFF1A9200203463 /* ViewController+MASAdditions.h */,
+				2E9BB11C1FFF1A9200203463 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E9BB0A41FFF19CB00203463 /* HTOPAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9BB0D11FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuth" */;
+			buildPhases = (
+				2E9BB0A11FFF19CB00203463 /* Sources */,
+				2E9BB0A21FFF19CB00203463 /* Frameworks */,
+				2E9BB0A31FFF19CB00203463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTOPAuth;
+			productName = HTOPAuth;
+			productReference = 2E9BB0A51FFF19CB00203463 /* HTOPAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E9BB0BC1FFF19CC00203463 /* HTOPAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9BB0D41FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuthTests" */;
+			buildPhases = (
+				2E9BB0B91FFF19CC00203463 /* Sources */,
+				2E9BB0BA1FFF19CC00203463 /* Frameworks */,
+				2E9BB0BB1FFF19CC00203463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E9BB0BF1FFF19CC00203463 /* PBXTargetDependency */,
+			);
+			name = HTOPAuthTests;
+			productName = HTOPAuthTests;
+			productReference = 2E9BB0BD1FFF19CC00203463 /* HTOPAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E9BB0C71FFF19CC00203463 /* HTOPAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9BB0D71FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuthUITests" */;
+			buildPhases = (
+				2E9BB0C41FFF19CC00203463 /* Sources */,
+				2E9BB0C51FFF19CC00203463 /* Frameworks */,
+				2E9BB0C61FFF19CC00203463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E9BB0CA1FFF19CC00203463 /* PBXTargetDependency */,
+			);
+			name = HTOPAuthUITests;
+			productName = HTOPAuthUITests;
+			productReference = 2E9BB0C81FFF19CC00203463 /* HTOPAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E9BB09D1FFF19CB00203463 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = iBo;
+				TargetAttributes = {
+					2E9BB0A41FFF19CB00203463 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					2E9BB0BC1FFF19CC00203463 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E9BB0A41FFF19CB00203463;
+					};
+					2E9BB0C71FFF19CC00203463 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E9BB0A41FFF19CB00203463;
+					};
+				};
+			};
+			buildConfigurationList = 2E9BB0A01FFF19CB00203463 /* Build configuration list for PBXProject "HTOPAuth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E9BB09C1FFF19CB00203463;
+			productRefGroup = 2E9BB0A61FFF19CB00203463 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E9BB0A41FFF19CB00203463 /* HTOPAuth */,
+				2E9BB0BC1FFF19CC00203463 /* HTOPAuthTests */,
+				2E9BB0C71FFF19CC00203463 /* HTOPAuthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E9BB0A31FFF19CB00203463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9BB0B51FFF19CC00203463 /* LaunchScreen.storyboard in Resources */,
+				2E9BB0B21FFF19CC00203463 /* Assets.xcassets in Resources */,
+				2E9BB1291FFF1A9200203463 /* README.md in Resources */,
+				2E9BB11E1FFF1A9200203463 /* LICENSE in Resources */,
+				2E9BB0B01FFF19CC00203463 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0BB1FFF19CC00203463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0C61FFF19CC00203463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E9BB0A11FFF19CB00203463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9BB0FA1FFF1A2600203463 /* OTPAuthBarClock.m in Sources */,
+				2E9BB0AD1FFF19CB00203463 /* ViewController.m in Sources */,
+				2E9BB1261FFF1A9200203463 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				2E9BB0FB1FFF1A2600203463 /* OTPAuthURL.m in Sources */,
+				2E9BB1241FFF1A9200203463 /* MASViewConstraint.m in Sources */,
+				2E9BB0B81FFF19CC00203463 /* main.m in Sources */,
+				2E9BB1271FFF1A9200203463 /* View+MASAdditions.m in Sources */,
+				2E9BB0F61FFF1A2600203463 /* GTMNSDictionary+URLArguments.m in Sources */,
+				2E9BB1231FFF1A9200203463 /* MASViewAttribute.m in Sources */,
+				2E9BB1211FFF1A9200203463 /* MASConstraintMaker.m in Sources */,
+				2E9BB0F91FFF1A2600203463 /* HOTPGenerator.m in Sources */,
+				2E9BB0AA1FFF19CB00203463 /* AppDelegate.m in Sources */,
+				2E9BB0FC1FFF1A2600203463 /* OTPGenerator.m in Sources */,
+				2E9BB1281FFF1A9200203463 /* ViewController+MASAdditions.m in Sources */,
+				2E9BB0F81FFF1A2600203463 /* GTMStringEncoding.m in Sources */,
+				2E9BB1251FFF1A9200203463 /* NSArray+MASAdditions.m in Sources */,
+				2E9BB0FD1FFF1A2600203463 /* TOTPGenerator.m in Sources */,
+				2E9BB1221FFF1A9200203463 /* MASLayoutConstraint.m in Sources */,
+				2E9BB11F1FFF1A9200203463 /* MASCompositeConstraint.m in Sources */,
+				2E9BB0F71FFF1A2600203463 /* GTMNSString+URLArguments.m in Sources */,
+				2E9BB0F51FFF1A2600203463 /* GTMMethodCheck.m in Sources */,
+				2E9BB0F41FFF1A2600203463 /* DynamicToken.m in Sources */,
+				2E9BB1201FFF1A9200203463 /* MASConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0B91FFF19CC00203463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9BB0C21FFF19CC00203463 /* HTOPAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9BB0C41FFF19CC00203463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9BB0CD1FFF19CC00203463 /* HTOPAuthUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E9BB0BF1FFF19CC00203463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E9BB0A41FFF19CB00203463 /* HTOPAuth */;
+			targetProxy = 2E9BB0BE1FFF19CC00203463 /* PBXContainerItemProxy */;
+		};
+		2E9BB0CA1FFF19CC00203463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E9BB0A41FFF19CB00203463 /* HTOPAuth */;
+			targetProxy = 2E9BB0C91FFF19CC00203463 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E9BB0AE1FFF19CB00203463 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9BB0AF1FFF19CC00203463 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E9BB0B31FFF19CC00203463 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9BB0B41FFF19CC00203463 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E9BB0CF1FFF19CD00203463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E9BB0D01FFF19CD00203463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E9BB0D21FFF19CD00203463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = $SRCROOT/HTOPAuth/HTOPHeader.pch;
+				INFOPLIST_FILE = HTOPAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E9BB0D31FFF19CD00203463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = $SRCROOT/HTOPAuth/HTOPHeader.pch;
+				INFOPLIST_FILE = HTOPAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E9BB0D51FFF19CD00203463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTOPAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTOPAuth.app/HTOPAuth";
+			};
+			name = Debug;
+		};
+		2E9BB0D61FFF19CD00203463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTOPAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTOPAuth.app/HTOPAuth";
+			};
+			name = Release;
+		};
+		2E9BB0D81FFF19CD00203463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTOPAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTOPAuth;
+			};
+			name = Debug;
+		};
+		2E9BB0D91FFF19CD00203463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTOPAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = txooo.HTOPAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTOPAuth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E9BB0A01FFF19CB00203463 /* Build configuration list for PBXProject "HTOPAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9BB0CF1FFF19CD00203463 /* Debug */,
+				2E9BB0D01FFF19CD00203463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E9BB0D11FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9BB0D21FFF19CD00203463 /* Debug */,
+				2E9BB0D31FFF19CD00203463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E9BB0D41FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9BB0D51FFF19CD00203463 /* Debug */,
+				2E9BB0D61FFF19CD00203463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E9BB0D71FFF19CD00203463 /* Build configuration list for PBXNativeTarget "HTOPAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9BB0D81FFF19CD00203463 /* Debug */,
+				2E9BB0D91FFF19CD00203463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E9BB09D1FFF19CB00203463 /* Project object */;
+}
